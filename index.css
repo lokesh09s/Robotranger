@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+html, body {
+    background-color: #141414;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.one {
+    background-image: url(/image/bg.jpg);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 768px;
+    color: aliceblue;
+}
+.nav {
+    border-radius: 25px;
+    padding-left: 10px;
+    top: 4%;
+    width: 80%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-grow: 5;
+    align-items: center;
+    background-color: aliceblue;
+    flex-wrap: nowrap;
+}
+.nav_item {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.two {
+    background-color: #141414;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 768px;
+    color: aliceblue;
+    flex-direction: column;
+}
+.three {
+    background-color: #141414;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 868px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+    display: block;
+    transition: opacity 0.5s ease;
+}
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.image-container:hover img {
+    opacity: 0.7;
+}
+.image-container:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nav_item a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set text color */
+    transition-duration: 0.5s;
+    font-size: 18px; /* Set font size */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.nav_item a:hover {
+    transition-duration: 0.5s;
+    font-size: 20px;
+    color: rgb(109, 109, 109); /* Change color on hover for better interactivity */
+}
+.header{
+    margin-left: 150px;
+}
+@media only screen and (max-width: 950px) {
+    .nav_item a {
+        text-decoration: none; /* Remove underline */
+        color: black; /* Set text color */
+        transition-duration: 0.5s;
+        font-size: 14px; /* Set font size */
+
+    }
+    li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }
+@media only screen and (max-width: 688px) {
+    .nav_item a {
+        text-decoration: none; /* Remove underline */
+        color: black; /* Set text color */
+        transition-duration: 0.5s;
+        font-size: 14px; /* Set font size */
+        visibility: hidden;
+    }
+    li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }
+@media only screen and (max-width: 937px) {
+    .nav_item a {
+        text-decoration: none; /* Remove underline */
+        color: black; /* Set text color */
+        transition-duration: 0.5s;
+        font-size: 14px; /* Set font size */
+        visibility: hidden;
+    }
+    .nav{
+        padding-right: 20px;
+    }
+
+    li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #problem{
+        margin-top: 300px;
+        text-align: center;
+
+    }
+    .pp{
+
+        display: inline;
+        margin: auto;
+    }
+    .p{
+        display: inline-block;
+    }
+    .header h1{
+        font-size: 60px;
+    }
+  }
+@media only screen and (max-width: 627px) {
+    .nav_item a {
+        text-decoration: none; /* Remove underline */
+        color: black; /* Set text color */
+        transition-duration: 0.5s;
+        font-size: 14px; /* Set font size */
+        visibility: hidden;
+    }
+    li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #problem{
+        margin-top: 850px;
+    }
+    .header h1{
+        font-size: 80%;
+    }
+    .header{
+        margin-left: 40px;
+    }
+    .image-container{
+        margin-bottom: 100px;
+    }
+}
